@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import TableFour from './components/TableOne/TableFour';
+import TableOne from './components/TableOne/TableOne';
+import TableThree from './components/TableOne/TableThree';
+import Tabletwo from './components/Tabletwo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-7xl space-y-20 mx-auto my-10 noto-sans'>
+      Main table
+      <TableOne></TableOne>
+
+      <Tabletwo ></Tabletwo>
+
+      <TableThree></TableThree>
+
+      <TableFour></TableFour>
     </div>
   );
 }
